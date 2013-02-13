@@ -1,0 +1,9 @@
+%script{:type => "text/javascript", :src  => "https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"}
+%script{:type => "text/javascript", :src  => "/js/message.js"}
+%link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/grid.css'}
+%link{:rel => 'stylesheet', :type => 'text/css', :href => '/css/styles.css'}
+-if @message
+  :javascript
+    $(document).ready(function(){
+      $('#cover').show();
+    });
