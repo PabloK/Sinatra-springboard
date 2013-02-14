@@ -1,3 +1,4 @@
+require 'bundler/setup'
 require './config/environment'
 require './lib/models'
 require 'dm-migrations'
@@ -13,9 +14,13 @@ task :upgrade do
   puts "[rake]: Database has been upgraded."
 end
 
-task :test do
-  puts "[rake]: Creating test data."
-  # TODO create test database data
-  puts "[rake]: Executing tests."
-  # TODO run tests
+
+begin
+  require 'rspec/core/rake_task'
+  RSpec::Core::RakeTask.new(:spec) do |spec|
+    spec.pattern = 'spec/**/*_spec.rb'
+    spec.rspec_opts = ['--color --format documentation']
+  end
+task :default => :spec
+rescue LoadError
 end

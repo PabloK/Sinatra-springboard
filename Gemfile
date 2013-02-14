@@ -15,7 +15,7 @@ gem "activesupport"
 
 group :test do
   gem 'rspec'
-  gem 'randexpr'
+  gem 'randexp'
   gem 'factory_girl'
   gem 'capybara'
 end
