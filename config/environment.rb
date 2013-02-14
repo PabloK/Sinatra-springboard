@@ -26,10 +26,12 @@ class  Sinatra::Base
 
   # View dir configuration
   set :views, File.dirname(__FILE__) + "/../views"
+  
+  # Register session based flash
+  register Sinatra::Flash
 
   # Mailer configuration
-  register Sinatra::Flash
-    options = {      
+  options = {      
     :from => "noreply@asciisoccer.herokuapps.com",
     :via => :smtp,
     :via_options => {
