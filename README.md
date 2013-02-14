@@ -5,11 +5,11 @@ This application is an attempt at creating a basic stating point for app develop
 
 
 ##Installation
-'''bash
+```bash
 git clone https://github.com/PabloK/Sinatra-springboard.git
 cd Sinatra-springboard
 bundle install
-'''
+```
 
 ##Running the server
 rackup
