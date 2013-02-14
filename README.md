@@ -12,4 +12,6 @@ bundle install
 ```
 
 ##Running the server
+```bash
 rackup
+```
