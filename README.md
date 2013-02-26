@@ -25,7 +25,7 @@ Tests are located in separate folders inside the specfolder. Tests are configure
 Coffeescript & Sass files are converted by their respective controlers found in the lib/controler folders. .coffee and .sass files belong in the assets/js & assets/css folders respectivley.
 Configuration of publicfolders is done in the config.ru file and starts with configuring audio and images to be located in the public folder in respective subfolder. robots.txt is also configured here.
 
-For full feature the following environment variables needs to be configured. Preferably in your .baschrc file.
+For full feature the following environment variables needs to be configured. Preferably in your .bashrc file.
 ```bash
 # Postgres is just an example and comes preconfigured some changes are needed in conf/environment.rb to use MYSQL or Sqlite
 export DATABASE_URL="postgres://user:password@host/datbase"
