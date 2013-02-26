@@ -9,12 +9,14 @@ task :migrate do
   puts "[rake]: Database has been rebuilt."
 end
 
+desc "Upgrade database from DataMapper model"
 task :upgrade do
   DataMapper.finalize.auto_upgrade!   
   puts "[rake]: Database has been upgraded."
 end
 
 
+desc "Run system wide test suite."
 begin
   require 'rspec/core/rake_task'
   RSpec::Core::RakeTask.new(:spec) do |spec|
