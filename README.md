@@ -1,8 +1,7 @@
 Sinatra-springboard
 ===================
 
-This application is an attempt at creating a basic starting point for app development of full-stack applications. It will try to generalize as much as possible but in specifics will cater to my personal development needs. I will try to keep the springboard as easy as possible to install but requirements are going to include ruby, rubygems and bundler and a number of gems.
-Hopefully it will still be fairly installable, modular and maintainable.
+This application is an attempt at creating a basic starting point for app development of full-stack applications. It will try to generalize as much as possible but in specifics will cater to my personal development needs. I will try to keep the springboard as easy as possible to install to begin with ruby 1.9+, rubygems and bundler are required. A few gems will be installed during by bundler aswell these gems have some external dependancies that are not hard to come over trough apt-get or similar.
 
 ##Installation
 ```bash
